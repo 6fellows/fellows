@@ -1,0 +1,27 @@
+{
+  "name": "fellows",
+  "version": "1.0.0",
+  "description": "Fellows is a high-end clothing rental service for men",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/6fellows/fellows.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/6fellows/fellows/issues"
+  },
+  "homepage": "https://github.com/6fellows/fellows#readme",
+  "dependencies": {
+    "request": "^2.65.0",
+    "routes": "^2.1.0"
+  },
+  "devDependencies": {
+    "shot": "^2.0.1",
+    "tape": "^4.2.2"
+  }
+}
