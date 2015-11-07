@@ -20,7 +20,8 @@
     "escape-html": "^1.0.3",
     "pusher": "^1.0.6",
     "request": "^2.65.0",
-    "routes": "^2.1.0"
+    "routes": "^2.1.0",
+    "stripe": "^4.0.0"
   },
   "devDependencies": {
     "shot": "^2.0.1",
