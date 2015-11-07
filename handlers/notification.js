@@ -1,11 +1,15 @@
 var fs =require('fs');
 var Pusher = require('pusher');
-var index = fs.readFileSync(__dirname + '/../public/html/splash.html');
+var escapeHTML = require('escape-html'); // needs `npm install escape-html`
 
 
 
-module.exports = function home(req, res){
+
+module.exports = function home(req, res,match){
   res.writeHead(200, {'Content-Type':'text/html'});
+
+  var message = match.params.text;
+  console.log(message,'---------');
 
   var pusher = new Pusher({
     appId: '152826',
@@ -17,8 +21,7 @@ module.exports = function home(req, res){
 
 
   pusher.trigger('notifications', 'new_notification', {
-    message: "A new Member has Joined!!!"
-});
-
-  res.end(index,"Notification triggered!");
+    message: message
+  });
+res.end("Notification triggered!");
 };
