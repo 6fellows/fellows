@@ -1,10 +1,18 @@
-var paymentForm=document.getElementById('payment-form');
-paymentForm.addEventListener('submit', function(event){
-  console.log("submit");
-event.preventDefault();
+/*
+function stripeResponseHandler(status, response) {
+  console.log();
+};*/
 
-  Stripe.card.createToken(paymentForm, stripeResponseHandler(status, response){
-    var token = response.id
-    console.log(token);
-  });
-})
+var paymentForm = document.getElementById('paymentForm');
+	
+	paymentForm.addEventListener('submit', function(event) {
+            console.log("submit");
+            console.log(paymentForm);
+            event.preventDefault();
+
+  		Stripe.card.createToken(paymentForm, function stripeResponseHandler(status, response){
+  			var token = response.id;
+  			console.log(response);
+  		});
+            
+});
