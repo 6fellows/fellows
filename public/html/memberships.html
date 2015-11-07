@@ -3,8 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title></title>
-    <script type = "text/javascript" scr="https://js.stripe.com/v2/"></script>
-    <script type = "text/javascript">stripe.setPublishableKey('pk_test_75mYWHJNKMpDkEXD2KacBukY')</script>
+
   </head>
   <body>
 
@@ -38,7 +37,10 @@
 
   <button type="submit">Submit Payment</button>
 </form>
-    <script src="../js/membership.js" src="https://js.stripe.com/v2/">
-    </script>
+<script type="text/javascript" src="https://js.stripe.com/v2/"></script>
+
+<script type = "text/javascript">
+Stripe.setPublishableKey('pk_test_75mYWHJNKMpDkEXD2KacBukY');
+</script>
   </body>
 </html>
