@@ -6,6 +6,8 @@ var fs =require('fs');
 var port = process.env.PORT || 8000;
 
 router.addRoute('/', require('./handlers/home.js'));
+router.addRoute('/memberships', require('./handlers/memberships.js'));
+
 
 
 

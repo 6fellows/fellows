@@ -1,9 +1,9 @@
 var fs =require('fs');
-var index = fs.readFileSync(__dirname + '/../public/html/splash.html');
+var memberships = fs.readFileSync(__dirname + '/../public/html/memberships.html');
 
 
 
 module.exports = function home(req, res){
   res.writeHead(200, {'Content-Type':'text/html'});
-  res.end(index);
+  res.end(memberships);
 };
