@@ -8,8 +8,11 @@ var fs =require('fs');
 var port = process.env.PORT || 8000;
 
 router.addRoute('/', require('./handlers/home.js'));
-router.addRoute('/memberships', require('./handlers/membershipsHandler.js'));
-
+router.addRoute('/memberships', require('./handlers/memberships.js'));
+router.addRoute('/collections', require('./handlers/collections.js'));
+router.addRoute('/collection-images', require('./handlers/collection-images.js'));
+router.addRoute('/pusher', require('./handlers/pusher.js'));
+router.addRoute('/notification/:text', require('./handlers/notification.js'));
 router.addRoute('/token/:token', require('./handlers/tokenHandler.js'));
 router.addRoute("/personalInfo/:fullName/:email/:password/:address", require('./handlers/personalInfoHandler.js'));
 
