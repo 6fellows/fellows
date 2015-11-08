@@ -2,6 +2,8 @@ var fs =require('fs');
 var Pusher = require('pusher');
 var index = fs.readFileSync(__dirname + '/../public/html/splash.html');
 
+var counter = 0;
+
 
 
 module.exports = function home(req, res){
@@ -15,10 +17,19 @@ module.exports = function home(req, res){
   });
   pusher.port = 443;
 
+  counter = counter + 1;
 
+setTimeout(function(){
   pusher.trigger('notifications', 'new_notification', {
-    message: "A new Member has Joined!!!"
-});
+    message: "A new Member has Joined!!!",
+    counter: counter
+  });
+},400)
+
+  pusher.trigger('disconnection','new_notification',{
+    message: "Client has disconnected"
+  });
+
 
   res.end(index,"Notification triggered!");
 };
