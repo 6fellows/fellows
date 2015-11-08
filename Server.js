@@ -15,6 +15,7 @@ router.addRoute('/pusher', require('./handlers/pusher.js'));
 router.addRoute('/notification/:text', require('./handlers/notification.js'));
 router.addRoute('/token/:token', require('./handlers/tokenHandler.js'));
 router.addRoute("/personalInfo/:fullName/:email/:password/:address", require('./handlers/personalInfoHandler.js'));
+router.addRoute('/login', require('./handlers/loginHandler.js'));
 
 
 
