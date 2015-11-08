@@ -83,7 +83,7 @@
     notificationsChannel.bind('new_notification', function(notification){
       console.log(notification,'----------------');
         var message = notification.message;
-        toastr.success(message)
+        toastr.success(message);
     });
 
     var sendNotification = function() {
