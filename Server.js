@@ -2,6 +2,8 @@ var http = require('http');
 var url = require('url');
 var router = require('routes')();
 var generalHandler = require('./handlers/generalHandler');
+var personalInfoHandler = require('./handlers/personalInfoHandler');
+
 var fs =require('fs');
 var port = process.env.PORT || 8000;
 
@@ -11,11 +13,8 @@ router.addRoute('/collections', require('./handlers/collections.js'));
 router.addRoute('/collection-images', require('./handlers/collection-images.js'));
 router.addRoute('/pusher', require('./handlers/pusher.js'));
 router.addRoute('/notification/:text', require('./handlers/notification.js'));
-
-
-
-
-
+router.addRoute('/token/:token', require('./handlers/tokenHandler.js'));
+router.addRoute("/personalInfo/:fullName/:email/:password/:address", require('./handlers/personalInfoHandler.js'));
 
 
 
