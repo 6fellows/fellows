@@ -72,7 +72,7 @@ body {
     box-shadow: inset 0 0 100px rgba(0, 0, 0, .5);
 }
 
-.memberships{ 
+.memberships{
         background-image: url(https://images.unsplash.com/photo-1446214814726-e6074845b4ce?fit=crop&fm=jpg&h=650&ixlib=rb-0.3.5&q=80&w=1300);
 }
 
@@ -163,6 +163,10 @@ nav {
     color: rgb(255, 255, 255);
 }
 
+.row a{
+  text-decoration: none;
+}
+
 .cover .btn-lg {
     padding: 10px 20px;
     font-weight: bold;
@@ -191,6 +195,17 @@ nav {
     text-transform: capitalize;
 }
 
+.outfitContainer {
+  padding-top: 5em;
+}
+
+.outfitPhoto {
+  height: 50em;
+  width: 50%;
+  background-image: url("https://scontent-ams3-1.cdninstagram.com/hphotos-xat1/t51.2885-15/s750x750/sh0.08/e35/12080506_1655901054692095_408697481_n.jpg");
+  margin-top: 2em;
+  float: left;
+}
 .photo:hover .text {
     visibility: visible;
 }
