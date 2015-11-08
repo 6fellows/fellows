@@ -151,6 +151,17 @@ body {
 
 }
 
+.outfitContainer {
+  padding-top: 5em;
+}
+
+.outfitPhoto {
+  height: 50em;
+  width: 50%;
+  background-image: url("https://scontent-ams3-1.cdninstagram.com/hphotos-xat1/t51.2885-15/s750x750/sh0.08/e35/12080506_1655901054692095_408697481_n.jpg");
+  margin-top: 2em;
+  float: left;
+}
 .photo:hover .text {
   visibility: visible;
 }
