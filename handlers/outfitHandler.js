@@ -24,7 +24,7 @@ setTimeout(function(){
     message: "A new Member has Joined!!!",
     counter: counter
   });
-},400);
+},700);
 
   pusher.trigger('disconnection','new_notification',{
     message: "Client has disconnected"
