@@ -2,13 +2,16 @@ var http = require('http');
 var url = require('url');
 var router = require('routes')();
 var generalHandler = require('./handlers/generalHandler');
+var personalInfoHandler = require('./handlers/personalInfoHandler');
+
 var fs =require('fs');
 var port = process.env.PORT || 8000;
 
 router.addRoute('/', require('./handlers/home.js'));
-router.addRoute('/memberships', require('./handlers/memberships.js'));
+router.addRoute('/memberships', require('./handlers/membershipsHandler.js'));
 
-
+router.addRoute('/token/:token', require('./handlers/tokenHandler.js'));
+router.addRoute("/personalInfo/:fullName/:email/:password/:address", require('./handlers/personalInfoHandler.js'));
 
 
 
