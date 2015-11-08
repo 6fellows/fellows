@@ -48,7 +48,11 @@
         <p>16CM TWIST STRETCH DENIM JEANS - £188</p>
         </div>
         <div class="rentButton">
-          <button type="button">Add to wardrobe</button>
+          <button id="buy" type="button">Add to wardrobe</button>
+        </div>
+        <div class="dropdown">
+         <h4>Thank you, your outfit is on its way!</h4>
+         <button type="button"><a href="/collections">BACK TO COLLECTIONS</a></button>
         </div>
       </div>
     </div>
@@ -89,6 +93,10 @@
       };
 
       $('button.submit-notification').on('click', sendNotification);
+
+      $('#buy').click(function(){
+        $('.dropdown').slideToggle(300);
+      });
     </script>
 
     <!-- Bootstrap core JavaScript
