@@ -20,7 +20,7 @@
 			console.log("submit");
 
       event.preventDefault();
-
+      
   		Stripe.card.createToken(paymentForm, function stripeResponseHandler(status, response){
 				console.log("FULL NAME!!!!!!!!",fullName);
   			var token = response.id;
@@ -29,10 +29,5 @@
 				var request = new XMLHttpRequest()
 				request.open("POST","/token/"+token,true);
 				request.send();
-				//send to back
-
   		});
-
-
-
 });
