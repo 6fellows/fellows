@@ -8,10 +8,51 @@
   <body>
 
     <h2>HI</h2>
+  <div class="form-group">
+    <label for="email">Email address:</label>
+    <input type="email" class="form-control" id="email">
+  </div>
+  <div class="form-group">
+    <label for="full name">Full Name:</label>
+    <input type="name" class="form-control" id="fullName">
+  </div>
+  <div class="form-group">
+    <label for="pwd">Password:</label>
+    <input type="password" class="form-control" id="password">
+  </div>
+  <div class="form-group">
+    <label for="address">Address</label>
+    <input type="address" class="form-control" id="address">
+  </div>
+  <button id="personalBtn" type="submit" class="btn btn-default">Submit</button>
 
     <form action="" method="POST" id="paymentForm">
   <span class="payment-errors"></span>
 
+  <h3>Tailoring</h3>
+  <div class="form-row">
+    <label>
+      <span>Chest size:</span>
+      <input type="text" size="10"/>
+    </label>
+  </div>
+  <div class="form-row">
+    <label>
+      <span>Waist size:</span>
+      <input type="text" size="10"/>
+    </label>
+  </div>
+  <h3>Plans</h3>
+  <div class="form-row">
+    <label>
+      <span>Gold £80 pcm:</span>
+      <input type="radio" size="20" name="gold"/>
+    </label>
+    <label>
+      <span>Platnium £140pcm:</span>
+      <input type="radio" size="20" name="gold"/>
+    </label>
+  </div>
   <div class="form-row">
     <label>
       <span>Card Number</span>
