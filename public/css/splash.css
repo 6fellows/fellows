@@ -201,7 +201,9 @@ nav {
 
 .outfitPhoto {
   height: 50em;
-  width: 50%;
+  width: 41%;
+  margin-left: 4em;
+  background-repeat: no-repeat;
   background-image: url("https://scontent-ams3-1.cdninstagram.com/hphotos-xat1/t51.2885-15/s750x750/sh0.08/e35/12080506_1655901054692095_408697481_n.jpg");
   margin-top: 1em;
   float: left;
@@ -254,6 +256,15 @@ nav {
     color: rgba(255, 255, 255, .5);
 }
 
+.watch-container{
+  display:inline-flex;
+  position: relative;
+  padding-left:0px;
+}
+
+#notification{
+  padding-right: 10px;
+}
 
 /*
  * Affix and center
