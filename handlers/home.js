@@ -2,7 +2,6 @@ var fs =require('fs');
 var Pusher = require('pusher');
 var index = fs.readFileSync(__dirname + '/../public/html/splash.html');
 
-var counter = 0;
 
 
 
